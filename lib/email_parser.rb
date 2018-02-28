@@ -9,7 +9,7 @@ class EmailParser
   def initialize(emails)
     
     
-    binding.pry
+   # binding.pry
   end
   
   def parse(emails)
