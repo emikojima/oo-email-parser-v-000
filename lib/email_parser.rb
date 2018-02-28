@@ -12,6 +12,6 @@ class EmailParser
   end 
   
   def parse
-    emails.split(/[,\s]/)..reject(&:blank?).uniq
+    emails.split(/[,]/).uniq
   end
 end
