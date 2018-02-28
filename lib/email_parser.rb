@@ -8,12 +8,12 @@ class EmailParser
   
   def initialize(emails)
     
-    @@all << emails
+    
     binding.pry
   end
   
   def parse(emails)
-    
-    @@all.split(",")
+    emails.split(", ")
+   
   end
 end
