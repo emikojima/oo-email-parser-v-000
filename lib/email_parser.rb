@@ -5,14 +5,13 @@ require'pry'
 # or whitespace (' ').
 class EmailParser
   @@all = []
+  attr_accessor :emails
   
   def initialize(emails)
     
-    
-
   end
   
-  def parse(emails)
-    emails.split(", ").uniq
+  def parse
+    @emails.split(", ").uniq
   end
 end
