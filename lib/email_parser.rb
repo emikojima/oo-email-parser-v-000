@@ -13,7 +13,7 @@ class EmailParser
   
   def parse
     pe = []
-    pe = emails.split([/, \s /])
+    pe = emails.split(/[, \s ]/)
     pe.delete_if(&:empty?)
   end
 end
